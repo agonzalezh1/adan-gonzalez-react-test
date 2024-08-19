@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+.products-container {
+    .actions {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        height: 2rem;
+    }
+
+    table {
+        border: 1px solid none;
+        width: 100%;
+        margin: 16px 0;
+        background-color: $primary-2;
+        border-collapse: collapse;
+        thead {
+            height: 2rem;
+            color: $secondary-1;
+        }
+
+        thead th:nth-child(1) { width: 5% }
+        thead th:nth-child(2) { width: 65% }
+        thead th:nth-child(3) { width: 15% }
+        thead th:nth-child(4) { width: 15% }
+
+        tbody tr { height: 2rem }
+
+        tbody td:nth-child(2) {
+            padding-left: 20px;
+        }
+
+        tbody td:nth-child(1), td:nth-child(3), td:nth-child(4) {
+            text-align: center;
+        }
+
+        tbody tr:nth-child(odd) { background-color: $secondary-1}
+        tbody tr:nth-child(even) { background-color: $secondary-2}
+    }
+}

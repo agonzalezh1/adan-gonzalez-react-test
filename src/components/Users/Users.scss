@@ -1,0 +1,17 @@
+.users-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 32px;
+
+    .user-form-container {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 300px;
+
+        button {
+            margin-top: 20px;
+        }
+    }
+}

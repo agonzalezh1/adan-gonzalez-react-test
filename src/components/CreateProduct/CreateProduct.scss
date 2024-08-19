@@ -1,0 +1,22 @@
+.create-product-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 32px;
+
+    .product-form-container {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        align-self: center;
+
+        input {
+            margin-bottom: 15px;
+        }
+
+        .save-button {
+            align-self: center;
+            width: 300px;
+        }
+    }
+}
