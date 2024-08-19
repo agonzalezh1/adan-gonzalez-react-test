@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+# Adan Gonzalez Haro React Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto tiene como funcionalidad simular un portal de eCommercer con las siguientes características:
 
-## Available Scripts
+- Pantalla de login
+- Consulta de productos
+- Modificación de detalle de productos
+- Agregar un nuevo producto
+- Modificar las credenciales del usuario
 
-In the project directory, you can run:
+Para obtener los datos de los productos hacer referencia al api [FakeStoreApi](https://fakestoreapi.com/).
 
-### `npm start`
+## Configuracion
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Para correr el proyecto hay que instalar las dependencias (`npm install`) y ejecutar el siguiente comando
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```sh
+$ npm start
+```
 
-### `npm test`
+El proyecto iniciará en la ruta [http://localhost:3000](http://localhost:3000)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Las credenciales para ingresar al portal son: usuario `correo@dominio.com` y contraseña `p@ssword1`
 
-### `npm run build`
+## Tecnologías
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Los paquetes que se utilizaron para el desarrollo de esta aplicación son los siguientes:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `reduxjs/toolkit` para el manejo del estado de la aplicacion
+- `react-hook-form` para las validaciones de los formularios
+- `sass` para el manejo de estilos
+- `typescript` para el manejo de los tipos de dato
+- `webpack` para el empaquetado productivo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Empaquetado productivo
 
-### `npm run eject`
+La heramienta que se utiliza para crear el paquete productivo es webpack, y el comando que se utiliza esta configurado en el archivo `package.json`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```sh
+$ npm run build
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+El copmando completo es el siguiente:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```sh
+$ webpack --config webpack.prod.js --progress
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Next steps
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Realizar lazy loading en los componentes
+- Implementar pruebas unitarias
