@@ -14,7 +14,7 @@ import './App.scss';
 
 const App = () => {
 
-    const [isLogged, setIsLogged] = useState<boolean>(true);
+    const [isLogged, setIsLogged] = useState<boolean>(false);
 
     return (
         <div className="App">
