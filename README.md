@@ -18,7 +18,7 @@ Para correr el proyecto hay que instalar las dependencias (`npm install`) y ejec
 $ npm start
 ```
 
-El proyecto iniciará en la ruta [http://localhost:3000](http://localhost:3000)
+El proyecto iniciará en la ruta [http://localhost:3000](http://localhost:3000) y para poder ingresar al login será cargar la ruta [http://localhost:3000/#/login](http://localhost:3000/#/login)
 
 Las credenciales para ingresar al portal son: usuario `correo@dominio.com` y contraseña `p@ssword1`
 
